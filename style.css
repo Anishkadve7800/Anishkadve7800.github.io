@@ -191,3 +191,69 @@ span{
 .btn:hover {
     box-shadow: 0 0 1.6rem var(--main-color);
 }
+
+
+
+
+@media (max-width: 1024px) {
+    .header {
+        padding: 1.5rem 4%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 1rem 5%;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        background: var(--main-color);
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 1rem;
+        font-size: 2rem;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-content {
+        margin-left: 0;
+    }
+
+    .home-content h1 {
+        font-size: 4rem;
+    }
+
+    .home-content h3 {
+        font-size: 2.5rem;
+    }
+
+    .home-content p {
+        font-size: 1.4rem;
+    }
+}
+
+
+
